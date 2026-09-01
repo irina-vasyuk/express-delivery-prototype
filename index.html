@@ -39,28 +39,34 @@ input{font-family:inherit}
       <img src="img/logo.png" alt="iTAB" style="height:34px;width:auto;cursor:pointer" onClick="{{ goMain }}">
       
 
-      <div style="display:flex;gap:26px;align-items:center;font-size:12px;color:#3c3c3c">
-        <div style="display:flex;flex-direction:column;align-items:center;gap:4px;cursor:pointer">
-          <svg width="24" height="22" viewBox="0 0 24 22" fill="none"><path d="M12 20S1.5 13.6 1.5 7.2A5.2 5.2 0 0 1 12 4.6a5.2 5.2 0 0 1 10.5 2.6C22.5 13.6 12 20 12 20z" stroke="#3c3c3c" stroke-width="1.8" stroke-linejoin="round"/></svg>
-          Избранное
-        </div>
-        <div style="display:flex;flex-direction:column;align-items:center;gap:4px;cursor:pointer">
-          <svg width="24" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 7.5 12 3l9 4.5v9L12 21l-9-4.5v-9z" stroke="#3c3c3c" stroke-width="1.8" stroke-linejoin="round"/><path d="M3 7.5 12 12m0 0 9-4.5M12 12v9" stroke="#3c3c3c" stroke-width="1.8"/></svg>
-          Заказы
-        </div>
-        <div onClick="{{ goCart }}" style="display:flex;flex-direction:column;align-items:center;gap:4px;cursor:pointer;position:relative">
-          <svg width="24" height="22" viewBox="0 0 24 24" fill="none"><path d="M2 3h3l2.6 12.4h10.2L21 7H6" stroke="#3c3c3c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9.5" cy="20" r="1.6" fill="#3c3c3c"/><circle cx="17.5" cy="20" r="1.6" fill="#3c3c3c"/></svg>
-          Корзина
-          <sc-if value="{{ hasCart }}" hint-placeholder-val="{{ false }}">
-            <span style="position:absolute;top:-6px;right:6px;background:#ff2d55;color:#fff;border-radius:20px;min-width:18px;height:18px;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;padding:0 5px">{{ cartCount }}</span>
-          </sc-if>
-        </div>
-        <div style="display:flex;flex-direction:column;align-items:center;gap:4px;cursor:pointer">
-          <svg width="24" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="#3c3c3c" stroke-width="1.8"/><path d="M4.5 21c1.4-4 4-6 7.5-6s6.1 2 7.5 6" stroke="#3c3c3c" stroke-width="1.8" stroke-linecap="round"/></svg>
-          Профиль
-        </div>
-      </div>
+      <div style="display:flex;align-items:center;justify-content:space-between;height:76px">
+  <img src="img/logo.png" alt="iTAB" style="height:34px;width:auto;cursor:pointer" onClick="{{ goMain }}">
+
+  <div style="display:flex;gap:26px;align-items:center;font-size:12px;color:#3c3c3c">
+    <div style="display:flex;flex-direction:column;align-items:center;gap:4px;cursor:pointer">
+      <svg width="24" height="22" viewBox="0 0 24 22" fill="none"><path d="M12 20S1.5 13.6 1.5 7.2A5.2 5.2 0 0 1 12 4.6a5.2 5.2 0 0 1 10.5 2.6C22.5 13.6 12 20 12 20z" stroke="#3c3c3c" stroke-width="1.8" stroke-linejoin="round"/></svg>
+      Избранное
     </div>
+
+    <div style="display:flex;flex-direction:column;align-items:center;gap:4px;cursor:pointer">
+      <svg width="24" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 7.5 12 3l9 4.5v9L12 21l-9-4.5v-9z" stroke="#3c3c3c" stroke-width="1.8" stroke-linejoin="round"/><path d="M3 7.5 12 12m0 0 9-4.5M12 12v9" stroke="#3c3c3c" stroke-width="1.8"/></svg>
+      Заказы
+    </div>
+
+    <div onClick="{{ goCart }}" style="display:flex;flex-direction:column;align-items:center;gap:4px;cursor:pointer;position:relative">
+      <svg width="24" height="22" viewBox="0 0 24 24" fill="none"><path d="M2 3h3l2.6 12.4h10.2L21 7H6" stroke="#3c3c3c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9.5" cy="20" r="1.6" fill="#3c3c3c"/><circle cx="17.5" cy="20" r="1.6" fill="#3c3c3c"/></svg>
+      Корзина
+      <sc-if value="{{ hasCart }}" hint-placeholder-val="{{ false }}">
+        <span style="position:absolute;top:-6px;right:6px;background:#ff2d55;color:#fff;border-radius:20px;min-width:18px;height:18px;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;padding:0 5px">{{ cartCount }}</span>
+      </sc-if>
+    </div>
+
+    <div style="display:flex;flex-direction:column;align-items:center;gap:4px;cursor:pointer">
+      <svg width="24" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="#3c3c3c" stroke-width="1.8"/><path d="M4.5 21c1.4-4 4-6 7.5-6s6.1 2 7.5 6" stroke="#3c3c3c" stroke-width="1.8" stroke-linecap="round"/></svg>
+      Профиль
+    </div>
+  </div>
+</div>
     
   </div>
 </div>
